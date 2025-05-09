@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>LCU-Inventory Office Maintenace System For Leadcity University</title>
+    <title>Lead City Inventory Office Maintenance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    
+    <header>
+        <h1>Lead City University Inventory & Maintenance</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/inventory">Inventory</a>
+            <a href="/maintenance">Maintenance</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
